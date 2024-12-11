@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .galeria {
+    padding: 2rem;
+  }
+  
+  .galeria .card-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    text-align: center;
+  }
+  
+  .form-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .form-section h2 {
+    text-align: center;
+  }
+  
+  .verification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer .icone a img {
+    margin: 0.5rem;
+  }
+
+  
