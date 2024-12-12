@@ -3,138 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do projeto Mockup</title>
+    <title>Página do Projeto Mockup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Cabeçalho -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand">
             <div class="container-fluid">
-              <!-- Logo com imagem -->
-              <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/icons/corinthians logo.png" alt="Logo">
-              </a>
-        
-              <!-- Botão do menu hambúrguer -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="menu-icon.png" alt="Menu">
-              </button>
-        
-              <!-- Itens do menu -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#categoria1">Categoria 1</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#categoria2">Categoria 2</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#categoria3">Categoria 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#categoria4">Categoria 4</a>
-                  </li>
-                </ul>
-        
-                <!-- Campo de busca com botão de lupa -->
-                <form class="d-flex search-bar mx-auto" role="search">
-                  <div class="input-group">
-                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">
-                      <i class="bi bi-search"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
+                <a class="navbar-brand" href="#">
+                    <img src="icones/logo.png" alt="Logo da Fiel Torcida" width="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#categoria1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categoria2">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categoria3">Promoções</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categoria4">Contato</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
             </div>
-          </nav>        
+        </nav>
     </header>
-         
-      
-      <section class="hero">
-        <h1>BEM VINDO AO SITE DA FIEL TORCIDA</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo</p>
-      </section>
-    
-      <!-- Galeria de Produtos -->
 
-      <section class="galeria">
+    <!-- Seção Inicial -->
+    <section class="hero text-center py-5" style="background-image: url('icones/cabecalho.jpg'); background-size: cover; background-position: center;">
+        <h1 class="display">Bem-vindo ao site da Fiel Torcida</h1>
+        <p class="text-white">Do Corinthians para o corinthiano</p>
+    </section>
 
-        <h2>Favoritos da Fiel</h2>
-        <div class="card-container">
-          <div class="card">
-            <img src="https://static.shoptimao.com.br/produtos/camisa-corinthians-i-2425-sn-torcedor-nike-masculina/28/JD8-6758-028/JD8-6758-028_zoom1.jpg?ts=1715694444?ims=1088x" alt="Produto 1">
-            <h3>Camisa Corinthians I 24/25 s/n° Torcedor</h3>
-          </div>
-
-          <div class="card">
-            <img src="https://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2425-sn-torcedor-nike-masculina/06/JD8-6759-006/JD8-6759-006_zoom1.jpg?ts=1723042654?ims=1088x" alt="Produto 2">
-            <h3>Camisa Corinthians II 24/25 s/n° Torcedor</h3>
-          </div>
-          
-          <div class="card">
-            <img src="https://static.shoptimao.com.br/produtos/camisa-corinthians-iii-2425-sn-torcedor-nike-masculina/28/JD8-7872-028/JD8-7872-028_zoom1.jpg?ts=1725273727?ims=1088x" alt="Produto 3">
-            <h3>Camisa Corinthians III 24/25 s/n° Torcedor</h3>
-          </div>
-        
+    <!-- Galeria de Produtos -->
+    <section class="galeria container my-5">
+        <h2 class="text-center mb-4">Favoritos da Fiel</h2>
+        <div class="row justify-content-center g-4">
+            <!-- Produto 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://static.shoptimao.com.br/produtos/camisa-corinthians-i-2425-sn-torcedor-nike-masculina/28/JD8-6758-028/JD8-6758-028_zoom1.jpg?ts=1715694444?ims=1088x" class="card-img-top" alt="Produto 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camisa Corinthians I 24/25 s/n° Torcedor Nike Masculina - Branco+Preto</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2425-sn-torcedor-nike-masculina/06/JD8-6759-006/JD8-6759-006_zoom1.jpg?ts=1723042654?ims=1088x" class="card-img-top" alt="Produto 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camisa Corinthians II 24/25 s/n° Torcedor Nike Masculina - Preto</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://static.shoptimao.com.br/produtos/jaqueta-corinthians-nike-masculina/06/JD8-8000-006/JD8-8000-006_zoom1.jpg?ts=1731589505?ims=1088x" class="card-img-top" alt="Produto 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jaqueta Corinthians Nike Masculina - Preto</h5>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </section>
-    
-      <!-- Formulário -->
-      <section class="form-section">
-
-        <h2>Inscreva-se para receber promoções</h2>
-        <form id="security-form">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="category1" required>
-          
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-    
-          <div class="verification">
-            <label for="captcha">Resolva:</label>
-            <span id="math-problem"></span>
-            <input type="number" id="captcha" name="captcha" required>
-          </div>
-    
-          <button type="submit">Enviar</button>
-          <p id="result-message"></p>
-
+    <!-- Formulário -->
+    <section class="form-section container my-5">
+        <h2 class="text-center">Inscreva-se para receber promoções</h2>
+        <form id="security-form" class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" id="name" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Digite seu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="number" id="phone" class="form-control" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="mb-3">
+                <label for="captcha" class="form-label">Resolva: <span id="math-problem">3 + 5</span></label>
+                <input type="number" id="captcha" class="form-control" placeholder="Digite o resultado" required>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar</button>
         </form>
+    </section>
 
-      </section>
-    
-
-      <footer class="footer">
-
-        <p>Redes Sociais</p>
-        
-        <div class="icone">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="icons/facebook.png" alt="Facebook" width="52">
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="icons/instagram.png" alt="Instagram" width="52">
-              </a>
-              <a href="https://www.twitter.com" target="_blank">
-                <img src="icons/twitter.png" alt="Twitter" width="52">
-              </a>
-              <a href="whatsapp" target="_blank">
-                <img src="icons/whatsapp.png" alt="whatsapp" width="52">
-              </a>
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-light text-center py-4">
+        <p>Siga-nos nas redes sociais</p>
+        <div>
+            <a href="https://www.facebook.com/" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="Instagram.com" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="web.whatsapp.com" class="text-light mx-2"><i class="bi bi-whatsapp"></i></a>
         </div>
+    </footer>
 
-      </footer>
-    
-      <script src="script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
